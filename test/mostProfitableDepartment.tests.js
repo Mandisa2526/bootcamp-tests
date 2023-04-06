@@ -1,5 +1,5 @@
 describe("Test my mostProfitableDepartment function" , function(){
-    it("it should determine ,departments that are the most profitable and which day of the week is the most profitable" , function(){
+    it("it should determine and return 'outdoor' ,departments that are the most profitable and which day of the week is the most profitable" , function(){
         var salesData = [
             {department : 'hardware', sales : 4500, day : 'Monday'},
             {department : 'outdoor', sales : 1500, day : 'Monday'},
@@ -21,7 +21,7 @@ describe("Test my mostProfitableDepartment function" , function(){
         assert.equal('outdoor', mostProfitableDepartment(salesData), "Most profitable department is 'outdoor' for dataset 1");
     })        
 
-        it("it should determine ,departments that are the most profitable and which day of the week is the most profitable" , function(){
+        it("it should determine and return 'electronics' ,departments that are the most profitable and which day of the week is the most profitable" , function(){
             var salesData2 = [
                 {department : 'electronics', sales : 4500, day : 'Monday'},
                 {department : 'outdoor', sales : 1500, day : 'Monday'},
