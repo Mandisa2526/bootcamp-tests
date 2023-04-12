@@ -8,5 +8,9 @@ describe("Test my isFromBellville function" , function(){
     it("it should return false,when the registration number does not start with CY 'CY'" , function(){
         assert.equal(isFromBellville('GP 123'), false);
     });
+
+    it("it should return false,when the string passed is empty" , function(){
+        assert.equal(isFromBellville(''), false);
+    });
     
 });

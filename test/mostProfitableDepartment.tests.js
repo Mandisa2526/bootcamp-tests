@@ -75,4 +75,22 @@ describe("Test my mostProfitableDepartment function" , function(){
        
         
         });
+        it("it should determine and return an empty string ,if the string passed is empty" , function(){
+            var salesData2 = [
+                {department : '', sales : 4500, day : ''},
+                {department : '', sales : 1500, day : ''},
+                {department : '', sales : 5500, day : ''},
+                {department : '', sales : 7500, day : ''},
+                {department : '', sales : 2505, day : ''},
+                {department : '', sales : 1540, day : ''},
+                {department : '', sales : 1500, day : ''},
+                {department : '', sales : 8507, day : ''},
+                {department : '', sales : 8009, day : ''},
+                
+            ];
+            
+            assert.equal('', mostProfitableDepartment(salesData2), "Most profitable department is '' for dataset 2");
+       
+        
+        });
 });

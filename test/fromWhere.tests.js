@@ -11,5 +11,9 @@ describe("Test my fromWhere function" , function(){
     it("it should return Some Other place , when the car is not from these registrations 'CY,CJ AND CA'" , function(){
         assert.equal(fromWhere('ZN 568593'), 'Some other place!');
     });
+    it("it should return an empty string, if the empty string is passed" , function(){
+        
+        assert.equal(fromWhere(''), 'Some other place!');
+    });
 
 });

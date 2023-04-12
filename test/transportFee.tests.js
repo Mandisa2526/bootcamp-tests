@@ -9,4 +9,8 @@ describe("Test my transportFee function" , function(){
     it("it should return free ,when working the nightshift" , function(){
             assert.equal(transportFee('nightshift'), 'free', 'for night shift return free');
     }) 
+    it("it should return undefined ,when the string passed is empty" , function(){
+
+        assert.equal(transportFee(''), undefined, 'not a work shift');
+}) 
 });

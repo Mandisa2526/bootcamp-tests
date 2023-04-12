@@ -29,21 +29,26 @@ describe("Test my findItemsOver20 function" , function(){
             assert.deepEqual(results2, findItemsOver20(itemList2));
             
         })
-        it("it should return ,all the products that have a quantity higher than 20 in itemlist3" , function(){
+        it("it should return ,all the products that have a quantity below 20 in itemlist3" , function(){
             var itemList3 = [
-                {name : 'apples', qty : 40},
-                {name : 'pears', qty : 20},
-                {name : 'bananas', qty : 23},
-                {name : 'apples', qty : 37}
+                {name : 'apples', qty : 10},
+                {name : 'pears', qty : 4},
+                {name : 'bananas', qty : 8},
+                {name : 'apples', qty : 16}
             ];
             
-            var results3 = [
-                {name : 'apples', qty : 40},
-                {name : 'bananas', qty : 23},
-                {name : 'apples', qty : 37}
-            ];
+            var results3 = [];
             assert.deepEqual(results3, findItemsOver20(itemList3));
         })
+        it("it should return an empty string, if the empty string is passed in itemList3" , function(){
+            var results3 = [];
+            var itemList3 = [
+                {name : '', qty : ''},
+                {name : '', qty : ''}
+            ];
+            
+            assert.deepEqual(results3, findItemsOver(itemList3, 20));
+        });
         
 
 });

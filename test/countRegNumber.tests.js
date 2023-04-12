@@ -14,10 +14,10 @@ describe("Test my countRegNumber function" , function(){
         assert.equal(regCount, 1);
 
     });
-    it("it should return 2 , the input count the registration numbers in the string" , function(){
+    it("it should return 2, the input count the registration numbers in the string" , function(){
 
          
-       var regCount = countRegNumber('CA 42665, AA 12 RT GP')
+       var regCount = countRegNumber(' 42665, AA 12 RT GP')
        assert.equal(regCount, 2);
 
 

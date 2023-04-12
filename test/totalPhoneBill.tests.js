@@ -11,5 +11,9 @@ describe("Test my totalPhoneBill function" , function(){
         
         assert.equal('R1.30', totalPhoneBill('sms, sms'));
     });
+    it("it should calculate , and return R0.00 if the total bill is an empty string" , function(){
+        
+        assert.equal('R0.00', totalPhoneBill(''));
+    });
 
 });
