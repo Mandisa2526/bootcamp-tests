@@ -1,5 +1,5 @@
 describe("Test my findItemsOver function" , function(){
-    it("it should return , products name that have quantity higher than the threshold in itemList2" , function(){
+    it("it should return , products name that have quantity higher than 20 in itemList2" , function(){
         var itemList2 = [
             {name : 'apples', qty : 10},
             {name : 'pears', qty : 19},
@@ -12,7 +12,7 @@ describe("Test my findItemsOver function" , function(){
         assert.deepEqual(results2, findItemsOver(itemList2, 20));
     });
 
-    it("it should return a name of, products that have quantity higher than the threshold in the itemList" , function(){
+    it("it should return a name of, products that have quantity higher than the 20 in the itemList" , function(){
         var itemList = [
             {name : 'apples', qty : 10},
             {name : 'pears', qty : 37},
@@ -24,10 +24,10 @@ describe("Test my findItemsOver function" , function(){
             {name : 'pears', qty : 37},
             {name : 'bananas', qty : 27},
         ];
-        console.log(results, findItemsOver(itemList, 20));
+        
         assert.deepEqual(results, findItemsOver(itemList, 20));
     });
-    it("it should return a name of, products that have quantity higher than the threshold in itemList3" , function(){
+    it("it should return a name of, products that have quantity higher than  20 in itemList3" , function(){
         var results3 = [
             {name : 'apples', qty : 40},
             {name : 'bananas', qty : 23},
