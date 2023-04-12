@@ -7,4 +7,9 @@ describe("Test my regCheck function" , function(){
         assert.equal(regCheck('DC 55 YU GP', 'EC'), false);
         assert.equal(regCheck('5566 L', 'M'), false);
     });
+    it("it should return false ,when the end of a registration number that ends with GP, L, EC, MP is not called with 'GP, L, EC, MP'  " , function(){
+        
+        assert.equal(regCheck('FGT 123 MM', 'MP'), false);
+    });
+
 });

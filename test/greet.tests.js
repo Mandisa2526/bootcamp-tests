@@ -1,10 +1,13 @@
 describe("Test my greet function" , function(){
     it("it should return ,Maya when called with 'Maya'" , function(){
-        assert.equal("Hello, Maya", greet("Maya"), "this should not be true");
+        assert.equal(greet('Maya'), 'Hello, Maya');
     });
     it("it should return,Sizwe when called with 'Sizwe'" , function(){
-        assert.equal("Hello, Sizwe" , greet("Sizwe") , "this should not be true")
+        assert.equal(greet('Sizwe'), 'Hello, Sizwe');
     }) 
+    it("it should return,Bob when called with 'Bob'" , function(){
+        assert.equal(greet('Bob'), 'Hello, Bob');
+    })
 
     
 });

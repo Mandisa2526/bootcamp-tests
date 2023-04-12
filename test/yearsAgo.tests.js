@@ -1,6 +1,15 @@
 describe("Test my yearsAgo function" , function(){
-    it("it should take in a year and  return,how many years ago that year is from the current year" , function(){
-        assert.equal((new Date().getFullYear() - 2000), yearsAgo(2000));
-        assert.equal((new Date().getFullYear() - 2000), yearsAgo(2000));
+    it(" My function should return 23, if the input is 2000" , function(){
+
+        assert.equal(23, yearsAgo(2000));
+         
     });
-});
+    it(" My function should return 48, if the input is 1976" , function(){
+        assert.equal(47, yearsAgo(1976))
+    });
+    it(" My function should return 0 ,if the input is 2023" , function(){
+
+        assert.equal(0, yearsAgo(2023));
+
+    });
+}); 
