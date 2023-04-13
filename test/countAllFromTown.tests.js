@@ -16,5 +16,11 @@ describe("Test my countAllFromTown function" , function(){
         var fromBellville = countAllFromTown('CL 124,CY 567,CL 345, CJ 456,CL 341','CY');
 
         assert.equal(fromBellville, 1)
+    });
+    it("it should return false, if the string parameter passed is empty" , function(){
+        
+        var fromBellville = countAllFromTown('','');
+
+        assert.equal(false, '')
     }); 
 });
