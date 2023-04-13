@@ -14,7 +14,7 @@ describe("Test my countRegNumber function" , function(){
         assert.equal(regCount, 1);
 
     });
-    it("it should return false, when there is no  registration numbers in a string" , function(){
+    it("it should return one, when there is no  registration numbers in a string" , function(){
 
          
        var regCount = countRegNumber(' ')

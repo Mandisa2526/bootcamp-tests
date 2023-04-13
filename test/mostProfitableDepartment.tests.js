@@ -1,5 +1,5 @@
 describe("Test my mostProfitableDepartment function" , function(){
-    it("it should determine and return the most , profitable departments  and which day of the week is the most profitable" , function(){
+    it("it should determine and return the most , profitable departments  and which day of the week is the most profitable in salesData" , function(){
         var salesData = [
             {department : 'hardware', sales : 4500, day : 'Monday'},
             {department : 'outdoor', sales : 1500, day : 'Monday'},
